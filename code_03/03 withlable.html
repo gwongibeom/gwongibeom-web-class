@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>버튼 요소</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <h3>수강분야(중복 체크 가능)</h3>
+        <ul>
+            <li>
+                <input type="checkbox" value="grm">문법
+            </li>
+            <li>
+                <input type="checkbox" value="wr">작문
+            </li>
+            <li>
+                <input type="checkbox" value="rd" checked>독해
+            </li>
+        </ul>
+        <h3>1차 수강과목(중복체크 불가능)</h3>
+        <ul>
+            <li>
+                <input type="radio" name = "sub1" value="engtalk">영어회화
+            </li>
+            <li>
+                <input type="radio" name = "sub1" value="chtalk" checked>중국어회화
+            </li>
+            <li>
+                <input type="radio" name = "sub1" value="jptalk">일어회화
+            </li>
+        </ul>
+        <h3>2차 수강과목(중복체크 불가능)</h3>
+        <ul>
+            <li>
+                <input type="radio" name = "sub2" value="engtalk" checked>영어회화
+            </li>
+            <li>
+                <input type="radio" name = "sub2" value="chtalk">중국어회화
+            </li>
+            <li>
+                <input type="radio" name = "sub2" value="jptalk">일어회화
+            </li>
+        </ul>
+    </form>
+    <a href="../index.html">처음으로</a>
+</body>
+</html>
