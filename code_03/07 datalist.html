@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹폼</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+        form fieldset {
+            margin-bottom: 25px;
+        }
+        form legend{
+            font-weight: bold;
+            font-size:15px;
+        }
+        form ul li{
+            list-style: none;
+            margin: 15px 0 ;
+            font-size: 14px;
+        }
+        .reg{
+            color: darkgreen;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3>여름방학 특강 신청</h3>
+    <form>
+        <fieldset>
+            <legend>수강신청인</legend>
+            <ul>
+                <li>
+                    <label for="id" class="reg">학번</label>
+                    <input type="text" id="id" autofocus>
+                </li>
+                <li>
+                    <label for="name" class="reg">이름</label>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <label for="class" class="reg">학과</label>
+                    <select name="qw" id="class">
+                        <optgroup label="공과대학">
+                            <option value="a">건축공학과</option>
+                            <option value="b">기계공학과</option>
+                            <option value="c">산업공학과</option>
+                            <option value="d">전기전자공학과</option>
+                            <option value="e"selected>컴퓨터공학과</option>
+                            <option value="f">화학공학과</option>
+                        </optgroup>
+                        <optgroup label="인문대학">
+                            <option value="g">사회과</option>
+                            <option value="h">어문학부</option>
+                            <option value="i">철학</option>
+                        </optgroup>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>수강과목을 선택하세요</legend>
+            <ul>
+                <li>
+                    <label for="like">         
+                    <span>관심분야</span>
+                    </label>
+                    <input type="text" id="like" list="choices">
+                    <datalist id="choices">
+                        <option value="grammar" label="문법"></option>
+                        <option value="voca" label="어휘"></option>
+                        <option value="speaking" label="회화"></option>
+                        <option value="listening" label="리스닝"></option>
+                        <option value="news" label="뉴스시청"></option>
+                    </datalist>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>도서소개</legend>
+            <textarea name="intro" cols="65" rows="5">
+                * 위버멘쉬가 되어라
+
+                * 너의 삶을 개척하라
+
+                * 공기좋은 남산 중턱의 서울디지텍고등학교
+
+                * 저자/이영국 편집/홍길순 인쇄/디지텍고
+            </textarea>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="가입하기">
+            <input type="reset" value="다시쓰기">
+            <input type="button" value="새 탭 열기" onclick="window.open()">
+        </fieldset>
+    </form>
+</body>
+</html>
