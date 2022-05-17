@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font em</title>
+    <style>
+        *{
+            transition: all 0.2s;
+        }
+        html {
+            font-size: 20px;
+        }
+        body {
+            font-size: 1em;
+        }
+        section {
+            font-size: 1.5em;
+            padding: .33em .7666em .5em ; /*10px 23px 15px*/
+            border: 1px solid red;
+            width: 50%;
+            height: 200px;
+        }
+        div{
+            padding: 0.333em;
+        }
+        @media screen and (max-width:800px){
+            html{
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    font Test 01
+    <section>
+        <div>
+            font Test 02
+        </div>
+    </section>
+    <div>
+        font Test 03 
+    </div>
+</body>
+</html>

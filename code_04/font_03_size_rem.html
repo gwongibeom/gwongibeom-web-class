@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font size rem</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+        body{
+            font-size: 1rem;
+        }
+        section{
+            font-size: 2.5rem;
+            padding: 1rem 1.5rem 0.5rem;
+            border: 1px solid red ;
+        }
+        div{
+            padding: 0.333rem;
+            @media and (max-width:800px) {
+                html(font-size: 15px;)
+        }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        font test 01
+        <div>
+            font test 02
+        </div>
+    </section>
+</body>
+</html>
