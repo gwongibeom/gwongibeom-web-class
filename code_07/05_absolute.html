@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 absolute</title>
+    <style>
+        #wrap{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+        }
+        .box{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: #0088ff;
+        }
+        #sbox1{
+            top: 0;
+            left: 0;
+        }
+        #sbox2{
+            top: 0;
+            right: 0;
+        }
+        #sbox3{
+            bottom: 0;
+            left: 0;
+        }
+        #sbox4{
+            bottom: 0;
+            right: 0;
+        }
+        #sbox5{
+            bottom: 180px;
+            left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box" id="sbox1">1</div>
+        <div class="box" id="sbox2">2</div>
+        <div class="box" id="sbox3">3</div>
+        <div class="box" id="sbox4">4</div>
+        <div class="box" id="sbox5">5</div>
+    </div>
+</body>
+</html>
